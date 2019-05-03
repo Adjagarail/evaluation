@@ -90,11 +90,11 @@ if(!empty($_POST))
                         </div>
                         <div class="login-form">
                         <?php if(!empty($Erreur)):?>
-                            <div class="alert alert-danger">
+                            <div class="">
                                 <p> Erreurs </p>
-                                <ul>
+                                <ul class="list-group">
                                     <?php foreach($Erreur as $error):?>
-                                    <li> <?= $error; ?> </li>
+                                    <li class="list-group-item list-group-item-danger"> <?= $error; ?> </li>
                                     <?php endforeach;?>
                                 </ul>
                             </div>
